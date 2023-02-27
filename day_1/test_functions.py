@@ -63,3 +63,15 @@ def test_divide_array():
   assert functions.divide_array([7, 0, 8]) == 0
   assert functions.divide_array([9]) == 9
   assert functions.divide_array([60, 2, 5, 3]) == 2
+
+def test_alphabet():
+  assert functions.alphabet("A") == 1
+  assert functions.alphabet("e") == 5
+  assert functions.alphabet("Q") == 17
+
+def test_letter_count():
+   assert functions.letter_count("Either I zip down, or he zips up, and that is a mighty long zipper on Mother's Cher jumpsuit. There are dozens of us! DOZENS! He also said some things African American-y wasn't ready to hear. Do you guys know where I could get one of those gold necklaces with the T on it? That's a cross. Across from where? So you take your mom to work every day? Bummer. Moms are such a pain in the ass, huh? It's, like, die already! I think that's one of Mom's little fibs, you know, like I'll sacrifice anything for my children. Oh, hi, Mom. I have the afternoon free. Really? Did nothing cancel?", 1) == 32
+   assert functions.letter_count("Either I zip down, or he zips up, and that is a mighty long zipper on Mother's Cher jumpsuit. There are dozens of us! DOZENS! He also said some things African American-y wasn't ready to hear. Do you guys know where I could get one of those gold necklaces with the T on it? That's a cross. Across from where? So you take your mom to work every day? Bummer. Moms are such a pain in the ass, huh? It's, like, die already! I think that's one of Mom's little fibs, you know, like I'll sacrifice anything for my children. Oh, hi, Mom. I have the afternoon free. Really? Did nothing cancel?", 26) == 5
+   assert functions.letter_count("Either I zip down, or he zips up, and that is a mighty long zipper on Mother's Cher jumpsuit. There are dozens of us! DOZENS! He also said some things African American-y wasn't ready to hear. Do you guys know where I could get one of those gold necklaces with the T on it? That's a cross. Across from where? So you take your mom to work every day? Bummer. Moms are such a pain in the ass, huh? It's, like, die already! I think that's one of Mom's little fibs, you know, like I'll sacrifice anything for my children. Oh, hi, Mom. I have the afternoon free. Really? Did nothing cancel?", 18) == 28
+
+  

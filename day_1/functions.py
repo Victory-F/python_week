@@ -69,6 +69,18 @@ def divide_array(numbers: 'list[int]'):
             m/=n
     return m    
 
-# Write a functions that takes a list of numbers and an argument. Return the average of those numbers
+# Write a function that takes a list of numbers and an argument. Return the average of those numbers
 def average(numbers: 'list[int]'):
     return sum(numbers) / len(numbers)
+
+# Write a function that takes a single letter (may be upper or lower case). Return the number of this letter in the English Alphabet.
+def alphabet(letter: chr):
+    return ord(letter.lower())-96
+
+# Write a function that takes 2 arguments a text and number of letter in the alphabet. Return the number of times the letter appears in the string (no matter upper or lower case).
+def letter_count(text: str, letter_number: int):
+    letter = chr(letter_number + 96)
+    num = 0
+    for e in text:
+        if e.lower() == letter: num+=1
+    return num
