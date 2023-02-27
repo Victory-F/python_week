@@ -84,3 +84,15 @@ def letter_count(text: str, letter_number: int):
     for e in text:
         if e.lower() == letter: num+=1
     return num
+
+
+# Write a function that takes a 'list of numbers' argument. Return the sum of that list multiplied by the length of the array.
+def sum_product(numbers: 'list[int]'):
+    return sum(numbers) * len(numbers)
+
+# Write a function that capitalizes every other word in a string starting with the first one.
+def uppercase_string(string1: str):
+    l = string1.split()
+    for w in l:
+        if l.index(w) % 2 == 0: l[l.index(w)] = w.title()
+    return ' '.join(l)
