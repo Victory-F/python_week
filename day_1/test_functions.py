@@ -22,9 +22,9 @@ def test_batman():
   assert functions.batman() == "nananananananananana batman"
 
 def test_max():
-  assert functions.max(10, 5) == 10
-  assert functions.max(-10, 50) == 50
-  assert functions.max(-5, -50) == - 5
+  assert functions.max_num(10, 5) == 10
+  assert functions.max_num(-10, 50) == 50
+  assert functions.max_num(-5, -50) == - 5
 
 def test_max_divide():
   assert functions.max_divide(10, 5) == 0.5
@@ -53,3 +53,13 @@ def test_average():
   assert functions.average([2, 3, 4]) == 3
   assert functions.average([2]) == 2
   assert functions.average([100, 50]) == 75
+
+def test_multiply_list():
+  assert functions.multiply_list([2, 3, 6]) == 36
+  assert functions.multiply_list([5]) == 5
+  assert functions.multiply_list([10, 321, 15]) == 48150
+
+def test_divide_array():
+  assert functions.divide_array([7, 0, 8]) == 0
+  assert functions.divide_array([9]) == 9
+  assert functions.divide_array([60, 2, 5, 3]) == 2
